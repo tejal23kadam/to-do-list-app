@@ -1,38 +1,60 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-color{ 
+  background-color: #BEE4F4; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  text-transform: capitalize;
+  font-size: 50px;
+  text-decoration: underline;
+  color: #800000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #800000;
+  font-size: 20px; 
   color: white;
+  border: 5px solid white;
+}
+.inputFlex{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: center;
+}
+input{
+  width: 500px;
+  height: 50px;
+  margin-right:20px ;
+}
+label{
+  width: 200px;
+}
+#showItems{
+  width: 200px;
+  text-align: center;
+}
+ul{  
+  list-style-type: none;    
+}
+ul li
+{
+  border: 2px solid back ;
+}
+.listInput:focus{
+  outline-color: transparent;
+    border: 2px solid skyblue;  
+}
+.editTextInput {  
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  background-color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
