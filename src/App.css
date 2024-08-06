@@ -3,17 +3,29 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  
+}
+.handleeFontFamily{
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 .bg-color{ 
-  background-color: #BEE4F4; 
+  background-color: #00004d; 
 }
-h1{
+.title{
   text-transform: capitalize;
-  font-size: 50px;
-  text-decoration: underline;
-  color: #800000;
+  font-size: 40px;
+
+  color:#FFFFFF;
 }
-button{
+.weekName{
+  text-transform: capitalize;
+  font-size: 30px;  
+  color:#FFFFFF;
+}
+.button1{
   height: 50px;
   width: 100px;
   border-radius: 10px;
@@ -23,15 +35,27 @@ button{
   border: 5px solid white;
 }
 .inputFlex{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  margin: 30px;
-  justify-content: center;
+  margin: 40px 0px;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 30px;
+  width: 280px;
 }
-input{
-  width: 500px;
-  height: 50px;
+
+.inputFlex i{
+  font-size: 35px;
+}
+input{ 
+  height: 50px; 
   margin-right:20px ;
+  border: 20px rgba(0, 0, 0, .4); 
+  border-radius: 30px;
+ 
+}
+input:focus{  
+  outline: none;
 }
 label{
   width: 200px;
@@ -40,21 +64,54 @@ label{
   width: 200px;
   text-align: center;
 }
-ul{  
+.ul-style{  
   list-style-type: none;    
+  display: inline-block;
+  padding-left: 0rem;
+  /* width: 480px; */
 }
 ul li
 {
   border: 2px solid back ;
+  background: #F5F5F5;
+  padding: 10px;
+    border-radius: 20px;
+    margin: 10px 5px;
+
+}
+ul li :hover{
+  background-color: #E5E4E2;
 }
 .listInput:focus{
-  outline-color: transparent;
-    border: 2px solid skyblue;  
+ outline: none;
 }
 .editTextInput {  
   padding: 10px;
-  border: 1px solid #dfdfdf;
   outline: none;
-  background-color: aqua;
+  max-width: 500px;
+  border-radius: 30px;
+ 
 }
-
+.inputFlex i{
+  font-size: 35px;
+  padding: 0px 5px;
+  margin: 0px 5px;
+  background-color: #FF643B;
+  border-radius: 50%;
+}
+.ul-style i{
+  font-size: 25px;
+  padding: 0px 5px;
+  margin: 0px 5px;
+color: #FF643B;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.list-group-item:last-child {
+  border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border-bottom-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+}
